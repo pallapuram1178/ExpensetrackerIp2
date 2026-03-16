@@ -1,0 +1,93 @@
+:root {
+  /* Dark theme variables (default) */
+  --bg: #0f1724; /* deep blue-gray */
+  --surface: #0b1220; /* slightly lighter */
+  --card-bg: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  --muted: #94a3b8;
+  --text: #e6eef8;
+  --primary: #7c5cff; /* purple */
+  --primary-2: #61dafb; /* cyan accent */
+  --primary-hover: #5a3ef5;
+  --accent: #06b6d4;
+  --danger: #ef4444;
+  --border: rgba(255,255,255,0.06);
+  /* separate areas colors */
+  --header-bg: linear-gradient(180deg, rgba(124,92,255,0.14), rgba(97,218,251,0.03));
+  --nav-bg: rgba(11,18,32,0.18);
+  --content-bg: linear-gradient(180deg,#071122,#0f1724);
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text);
+  background-color: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: var(--primary-2);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--primary);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--content-bg);
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.1;
+  font-weight: 300;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background: linear-gradient(90deg,var(--primary),var(--primary-2));
+  color: var(--surface);
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  box-shadow: 0 6px 14px rgba(15,23,36,0.06);
+}
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(15,23,36,0.08);
+}
+button:focus,
+button:focus-visible {
+  outline: 3px solid rgba(79,70,229,0.12);
+}
+
+/* Allow manual theme switching using the data-theme attribute on <html>.
+   Default is light (root variables above). When data-theme="dark" is set,
+   dark variables will be applied regardless of system preference. */
+
+[data-theme="light"] {
+  --bg: #f4f7fb; /* page background */
+  --surface: #ffffff; /* surface / card background */
+  --card-bg: linear-gradient(180deg,#ffffff,#fbfdff);
+  --muted: #6b7280; /* muted text */
+  --text: #0f1724; /* primary text */
+  --primary: #4f46e5; /* indigo */
+  --primary-2: #06b6d4; /* cyan accent */
+  --primary-hover: #3f3acb;
+  --accent: #06b6d4;
+  --danger: #ef4444;
+  --border: #e6eef8; /* light border */
+  --header-bg: linear-gradient(180deg,#f8fafc,#eef2ff);
+  --nav-bg: #f7fafc;
+  --content-bg: linear-gradient(180deg,#ffffff,#fbfdff);
+}
+

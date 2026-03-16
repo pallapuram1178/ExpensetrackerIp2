@@ -1,0 +1,18 @@
+.reports-container{display:flex;flex-wrap:wrap;justify-content:center;margin:40px;gap:16px}
+.report-card{background:var(--card-bg);padding:26px;border-radius:12px;width:280px;margin:15px;border:1px solid var(--border);color:var(--text);box-shadow:0 6px 14px rgba(15,23,36,0.06)}
+
+h3{color:var(--text);margin-bottom:12px;font-weight:400;font-size:18px}
+
+table{width:100%;border-collapse:collapse;margin-top:10px}
+
+th,td{border:1px solid var(--border);padding:10px;text-align:center;font-size:14px;color:var(--text)}
+
+th{background:rgba(255,255,255,0.02);color:var(--muted);font-weight:500}
+
+/* Reuse list styles for all/all-lists */
+.panel{background:var(--card-bg);padding:20px;border-radius:12px;border:1px solid var(--border);color:var(--text)}
+.scroll-list{max-height:450px;overflow-y:auto;padding-right:8px}
+.list-item{background:var(--surface);padding:12px;margin-bottom:12px;border-radius:8px;border:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;color:var(--text);box-shadow:0 6px 12px rgba(15,23,36,0.04)}
+.list-item p{margin:0}
+.danger-btn{background:linear-gradient(90deg,var(--danger),#ff6b6b);color:white;border:none;padding:6px 12px;border-radius:8px;cursor:pointer}
+.empty{color:var(--muted);padding:40px 0;text-align:center}

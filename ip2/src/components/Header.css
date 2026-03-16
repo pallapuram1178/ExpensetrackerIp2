@@ -1,0 +1,26 @@
+.site-header{
+  background: var(--header-bg);
+  color: var(--text);
+  padding: 24px 16px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+.site-header h1{ margin:0; font-weight:300; font-size:1.9rem }
+
+.site-nav{
+  display:flex;
+  justify-content:center;
+  gap:24px;
+  padding: 18px 0;
+  background: var(--nav-bg);
+  border-bottom:1px solid var(--border);
+}
+.site-nav a{
+  color:var(--muted);
+  text-decoration:none;
+  padding:8px 12px;
+  border-radius:8px;
+  font-weight:500;
+}
+.site-nav a:hover{ background:rgba(79,70,229,0.06); color:var(--primary-2); transform:translateY(-2px) }
+.site-nav .logout-link{ color:var(--danger); font-weight:600 }
